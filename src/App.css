@@ -1,0 +1,119 @@
+/* Reset & base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.quiz-container {
+  background-color: #ffffff;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Title */
+.quiz-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 25px;
+}
+
+/* Question */
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #37474f;
+}
+
+/* Option Buttons */
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background-color: #fafafa;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.option-btn:hover {
+  background-color: #d0f0fd;
+  border-color: #4dabf7;
+}
+
+.option-btn.selected {
+  background-color: #90caf9;
+  color: white;
+  border-color: #42a5f5;
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #1e88e5;
+}
+
+/* Buttons */
+button {
+  font-size: 16px;
+  padding: 10px 24px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Results */
+.result h2 {
+  font-size: 26px;
+  color: #2e7d32;
+}
+
+.result p {
+  font-size: 18px;
+  color: #388e3c;
+}
+
+/* Question number */
+.question-count {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #78909c;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
